@@ -30,7 +30,7 @@ limitations under the License.
         <module>agreste-test</module>
     </modules>
 
-    <name>AGRESTE</name>
+    <name>Agapsys REST Environment (AGRESTE)</name>
     <description>Agapsys REST Environment: A full-stack REST framework for java applications</description>
     <url>https://github.com/agapsys/agreste</url>
 
