@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
- Copyright 2016 Agapsys Tecnologia Ltda-ME.
+Copyright 2015-2016 Agapsys Tecnologia Ltda-ME.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -20,18 +20,18 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.agapsys</groupId>
-    <artifactId>agreste-test</artifactId>
+    <artifactId>agreste</artifactId>
     <version>0.1.0</version>
-    <packaging>jar</packaging>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
-    </properties>
+    <packaging>pom</packaging>
 
-    <name>AGRESTE (Testing Library)</name>
-    <description>Testing utilities for AGRESTE-based applications</description>
+    <modules>
+        <module>agreste-core</module>
+        <module>agreste-test</module>
+    </modules>
+
+    <name>AGRESTE</name>
+    <description>Agapsys REST Environment: A full-stack REST framework for java applications</description>
     <url>https://github.com/agapsys/agreste</url>
 
     <licenses>
@@ -59,38 +59,6 @@ limitations under the License.
         <name>Agapsys Tecnologia Ltda-ME</name>
         <url>http://www.agapsys.com</url>
     </organization>
-
-    <dependencies>
-        <!-- Compile dependencies -->
-        <dependency>
-            <groupId>com.agapsys</groupId>
-            <artifactId>agreste-core</artifactId>
-            <version>[0.1.0, 1.0.0)</version>
-        </dependency>
-        <dependency>
-            <groupId>com.agapsys</groupId>
-            <artifactId>console-utils</artifactId>
-            <version>[0.1.0, 1.0.0)</version>
-        </dependency>
-        <dependency>
-            <groupId>com.agapsys</groupId>
-            <artifactId>web-app-toolkit-test</artifactId>
-            <version>[0.1.0, 1.0.0)</version>
-        </dependency>
-
-        <!-- Test dependencies -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>1.4.193</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
 </project>
+
+
