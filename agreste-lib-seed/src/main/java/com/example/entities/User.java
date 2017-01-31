@@ -72,8 +72,9 @@ public class User extends AbstractEntity<User> implements com.agapsys.rcf.User, 
         return id;
     }
 
-    public void setId(long id) {
+    public User setId(long id) {
         this.id = id;
+        return this;
     }
     // -------------------------------------------------------------------------
 
@@ -84,11 +85,12 @@ public class User extends AbstractEntity<User> implements com.agapsys.rcf.User, 
     public String getUsername() {
         return username;
     }
-    public void setUsername(String username) {
+    public User setUsername(String username) {
         if (username == null || username.trim().isEmpty())
             throw new IllegalArgumentException("Null/Empty username");
 
         this.username = username;
+        return this;
     }
     // -------------------------------------------------------------------------
 
@@ -106,13 +108,14 @@ public class User extends AbstractEntity<User> implements com.agapsys.rcf.User, 
     public String getPasswordHash() {
         return passwordHash;
     }
-    public void setPasswordHash(String passwordHash) {
+    public User setPasswordHash(String passwordHash) {
         if (passwordHash == null || passwordHash.trim().isEmpty()) throw new IllegalArgumentException("Null/Empty password hash");
 
         this.passwordHash = passwordHash;
+        return this;
     }
-    public final void setPassword(String password) {
-        setPasswordHash(getPasswordHash(password));
+    public final User setPassword(String password) {
+        return setPasswordHash(getPasswordHash(password));
     }
     public final boolean isPasswordValid(String password) {
         return isPasswordValid(password, getPasswordHash());
