@@ -28,6 +28,8 @@ limitations under the License.
     <modules>
         <module>agreste-core</module>
         <module>agreste-test</module>
+        <module>agreste-app-seed</module>
+        <module>agreste-lib-seed</module>
     </modules>
 
     <name>Agapsys REST Environment (AGRESTE)</name>
