@@ -10,7 +10,7 @@ Welcome to the AGRESTE project.
 * Transactional requests (automatic JPA transaction management)
 * JPA query builders (provided by [Agapsys JPA Utils](https://github.com/agapsys/jpa-utils))
 * REST endpoints mapping to servlet methods (provided by [Agapsys RCF](https://github.com/agapsys/rcf))
-* Singleton management for application **Services** and **Modules** (provided by [Agapsys Web Application Toolkit](https://github.com/agapsys/web-app-toolkit))
+* Singleton management for application **Services** (provided by [Agapsys Web Application Toolkit](https://github.com/agapsys/web-app-toolkit))
 
 ## Compiling
 
