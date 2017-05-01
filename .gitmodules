@@ -1,12 +1,12 @@
 [submodule "agreste-core"]
 	path = agreste-core
-	url = git@github.com:agapsys/agreste-core.git
+	url = https://github.com/agapsys/agreste-core.git
 [submodule "agreste-test"]
 	path = agreste-test
-	url = git@github.com:agapsys/agreste-test.git
+	url = https://github.com/agapsys/agreste-test.git
 [submodule "agreste-app-seed"]
 	path = agreste-app-seed
-	url = git@github.com:agapsys/agreste-app-seed.git
+	url = https://github.com/agapsys/agreste-app-seed.git
 [submodule "agreste-lib-seed"]
 	path = agreste-lib-seed
-	url = git@github.com:agapsys/agreste-lib-seed.git
+	url = https://github.com/agapsys/agreste-lib-seed.git
